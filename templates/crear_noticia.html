@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crear Noticia</title>
+</head>
+<body>
+    <p>Crear Noticia</p>
+    {% if mensaje %}
+        <p>{{ mensaje }}</p>
+    {% else %}
+        <p>No se creó la noticia</p>
+    {% endif %}
+    <form action="{% url 'crear_noticia' %}" method="post">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo"><br><br>
+        <label for="contenido">Contenido:</label>
+        <textarea id="contenido" name="contenido"></textarea><br><br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+        <input type="submit" value="Crear Noticia">
+    </form>
+</body>
+

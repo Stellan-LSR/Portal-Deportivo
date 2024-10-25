@@ -1,0 +1,10 @@
+<h2>Comentarios</h2>
+<ul>
+    {% for comentario in comentarios %}
+    <li>
+        <p>Usuario: {{comentario[2]}}</p>
+        <p>Comentario: {{comentario[3]}}</p>
+        <p>Fecha: {{comentario[4]}}</p>
+    </li>
+    {% endfor %}
+</ul>

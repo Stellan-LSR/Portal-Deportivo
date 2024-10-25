@@ -1,0 +1,9 @@
+<form action="/editar_noticia/{{noticia[0]}}" method="post">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" value="{{noticia[1]}}">
+    <label for="contenido">Contenido:</label>
+    <textarea id="contenido" name="contenido">{{noticia[2]}}</textarea> 
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" value="{{noticia[3]}}">
+    <input type="submit" value="Guardar Cambios">    
+</form>
